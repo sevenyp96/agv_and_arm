@@ -1,0 +1,12 @@
+<launch>
+
+    <!-- 3. start the robot -->
+    <include file="$(find change_aubo_i5_moveit_config)/launch/moveit_planning_execution.launch">
+	<arg name="sim" value="false" />
+        <arg name="robot_ip" value="192.168.64.7" />
+    </include>
+
+
+    <node pkg="tf" type="static_transform_publisher" name="base_to_camera_broadcaster" args="1.5965196495814358 0.11163858228818097 0.05097966948451575 -0.5100854876017832 -0.3918567005697743 0.5110587941325155 0.5701578996176764 base_link camera_color_optical_frame 100" />  
+
+</launch>

@@ -1,0 +1,1 @@
+该文件是再aubo_i5原始的URDF文件中添加了夹具，然后使用assistant完成的moveit构建。

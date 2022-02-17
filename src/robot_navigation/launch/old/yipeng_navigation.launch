@@ -1,0 +1,22 @@
+<launch>
+
+  <!-- Map server -->
+  <arg name="map_file" default="$(find robot_navigation)/maps/room.yaml"/>
+  <node pkg="map_server" name="map_server" type="map_server" args="$(arg map_file)"/>
+
+  <!-- AMCL -->
+  <!--include file="$(find robot_navigation)/launch/amcl.launch"/-->
+
+  <!-- move_base -->
+  <include file="$(find robot_navigation)/launch/move_base.launch"/>
+
+  <!-- start velodyne -->
+  <include file="$(find velodyne_pointcloud)/launch/VLP16_points_zhangbo.launch">
+  </include>
+
+  <!-- start base_link to map transform -->
+  <node pkg="tf" type="static_transform_publisher" name="base_link_to_map" args="0 0 0 0 0 0 base_link map 0"/>
+
+
+
+</launch>

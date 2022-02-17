@@ -1,0 +1,16 @@
+<!-- run joy and odom node-->
+<launch>
+
+  <!-- start servo -->
+  <node pkg="cmd_vel_control" type="cmd_vel_control_node" name="cmd_vel_control_node" output="screen"/>
+
+  <!-- start joy_driver -->
+  <node pkg="joy" type="joy_node" name="joy_node" output="screen"/>
+
+  <!-- start joy_control -->
+  <node pkg="joy_control" type="joy_control_node" name="joy_control_node" output="screen"/>
+
+  <!-- start odometry -->
+  <node pkg="odom" type="odom_node" name="odom_node" output="screen"/>
+
+</launch>

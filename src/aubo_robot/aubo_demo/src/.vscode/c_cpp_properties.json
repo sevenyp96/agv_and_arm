@@ -1,0 +1,30 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/xiaoqiang/ws_yp/devel/include",
+        "/opt/ros/kinetic/include",
+        "/home/xiaoqiang/ws_yp/src/aubo_robot/aubo_controller/include",
+        "/home/xiaoqiang/ws_yp/src/aubo_robot/aubo_driver/include",
+        "/home/xiaoqiang/ws_yp/src/aubo_robot/aubo_kinematics/include",
+        "/home/xiaoqiang/ws_yp/src/aubo_robot/aubo_msgs/include",
+        "/home/xiaoqiang/ws_yp/src/cmd_vel_control/include",
+        "/home/xiaoqiang/ws_yp/src/joy_control/include",
+        "/home/xiaoqiang/ws_yp/src/msglist/include",
+        "/home/xiaoqiang/ws_yp/src/odom/include",
+        "/home/xiaoqiang/ws_yp/src/realsense-ros/realsense2_camera/include",
+        "/home/xiaoqiang/ws_yp/src/velodyne/velodyne_driver/include",
+        "/home/xiaoqiang/ws_yp/src/velodyne/velodyne_laserscan/include",
+        "/home/xiaoqiang/ws_yp/src/velodyne/velodyne_pcl/include",
+        "/home/xiaoqiang/ws_yp/src/velodyne/velodyne_pointcloud/include",
+        "/home/xiaoqiang/ws_yp/src/yp_linshi/include",
+        "/usr/include"
+      ],
+      "name": "Linux"
+    }
+  ]
+}
